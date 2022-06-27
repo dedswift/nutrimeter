@@ -3,3 +3,6 @@ food-recognizer.tar
 *.png
 *.jpg
 __pycache/
+DockerImages/
+.DS_Store
+ai/final_model.h5

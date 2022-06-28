@@ -1,0 +1,50 @@
+[2022-06-27T19:42:44.416Z] Remote-Containers 0.238.2 in VS Code 1.68.1 (30d9c6cd9483b2cc586687151bcbcd635f373630).
+[2022-06-27T19:42:44.416Z] Start: Resolving Remote
+[2022-06-27T19:42:44.420Z] Setting up container for folder or workspace: /Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter
+[2022-06-27T19:42:44.422Z] Start: Check Docker is running
+[2022-06-27T19:42:44.422Z] Start: Run: docker version --format {{.Server.APIVersion}}
+[2022-06-27T19:42:44.490Z] Stop (68 ms): Run: docker version --format {{.Server.APIVersion}}
+[2022-06-27T19:42:44.490Z] Server API version: 1.41
+[2022-06-27T19:42:44.490Z] Stop (68 ms): Check Docker is running
+[2022-06-27T19:42:44.491Z] Start: Run: docker volume ls -q
+[2022-06-27T19:42:44.545Z] Stop (54 ms): Run: docker volume ls -q
+[2022-06-27T19:42:44.555Z] Start: Run: docker ps -q -a --filter label=vsch.local.folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --filter label=vsch.quality=stable
+[2022-06-27T19:42:44.609Z] Stop (54 ms): Run: docker ps -q -a --filter label=vsch.local.folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --filter label=vsch.quality=stable
+[2022-06-27T19:42:44.609Z] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter
+[2022-06-27T19:42:44.668Z] Stop (59 ms): Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter
+[2022-06-27T19:42:44.668Z] Start: Run: docker inspect --type container 1e44b0226cc6
+[2022-06-27T19:42:44.720Z] Stop (52 ms): Run: docker inspect --type container 1e44b0226cc6
+[2022-06-27T19:42:44.721Z] Start: Run: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper /Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /Users/omarmostafa/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --workspace-folder /Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --workspace-mount-consistency cached --id-label devcontainer.local_folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --log-level debug --log-format json --config /Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root true
+[2022-06-27T19:42:44.809Z] remote-containers 0.238.2.
+[2022-06-27T19:42:44.809Z] Start: Run: docker buildx version
+[2022-06-27T19:42:44.905Z] Stop (96 ms): Run: docker buildx version
+[2022-06-27T19:42:44.905Z] Start: Resolving Remote
+[2022-06-27T19:42:44.906Z] Start: Run: git rev-parse --show-cdup
+[2022-06-27T19:42:44.911Z] Stop (5 ms): Run: git rev-parse --show-cdup
+[2022-06-27T19:42:44.911Z] Start: Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter
+[2022-06-27T19:42:44.974Z] Stop (63 ms): Run: docker ps -q -a --filter label=devcontainer.local_folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter
+[2022-06-27T19:42:44.975Z] Start: Run: docker inspect --type container 1e44b0226cc6
+[2022-06-27T19:42:45.038Z] Stop (63 ms): Run: docker inspect --type container 1e44b0226cc6
+[2022-06-27T19:42:45.038Z] Start: Inspecting container
+[2022-06-27T19:42:45.038Z] Start: Run: docker inspect --type container 1e44b0226cc6dd11902d358394a36ef23f4d83946a0507f90b30984360e78dff
+[2022-06-27T19:42:45.099Z] Stop (61 ms): Run: docker inspect --type container 1e44b0226cc6dd11902d358394a36ef23f4d83946a0507f90b30984360e78dff
+[2022-06-27T19:42:45.099Z] Stop (61 ms): Inspecting container
+[2022-06-27T19:42:45.099Z] Start: Run in container: /bin/sh
+[2022-06-27T19:42:45.101Z] Start: Run in container: uname -m
+[2022-06-27T19:42:45.173Z] Stop (74 ms): Run in container: /bin/sh
+[2022-06-27T19:42:45.173Z] Shell server terminated (code: 126, signal: null)
+[2022-06-27T19:42:45.174Z] unable to find user omarmostafa: no matching entries in passwd file
+[2022-06-27T19:42:45.173Z] Start: Run in container: cat /etc/passwd
+[2022-06-27T19:42:45.173Z] Stdin closed!
+[2022-06-27T19:42:45.174Z] Error: An error occurred setting up the container.
+[2022-06-27T19:42:45.174Z]     at NR (/Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js:239:1572)
+[2022-06-27T19:42:45.174Z]     at Jy (/Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js:239:1510)
+[2022-06-27T19:42:45.174Z]     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[2022-06-27T19:42:45.175Z]     at async zR (/Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js:245:2006)
+[2022-06-27T19:42:45.175Z]     at async nb (/Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js:245:3110)
+[2022-06-27T19:42:45.175Z]     at async JR (/Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js:245:13046)
+[2022-06-27T19:42:45.175Z]     at async KR (/Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js:245:12802)
+[2022-06-27T19:42:45.176Z] Stop (455 ms): Run: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper /Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /Users/omarmostafa/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --workspace-folder /Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --workspace-mount-consistency cached --id-label devcontainer.local_folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --log-level debug --log-format json --config /Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root true
+[2022-06-27T19:42:45.176Z] Exit code 1
+[2022-06-27T19:42:45.178Z] Command failed: /Applications/Visual Studio Code.app/Contents/Frameworks/Code Helper.app/Contents/MacOS/Code Helper /Users/omarmostafa/.vscode/extensions/ms-vscode-remote.remote-containers-0.238.2/dist/spec-node/devContainersSpecCLI.js up --user-data-folder /Users/omarmostafa/Library/Application Support/Code/User/globalStorage/ms-vscode-remote.remote-containers/data --workspace-folder /Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --workspace-mount-consistency cached --id-label devcontainer.local_folder=/Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter --log-level debug --log-format json --config /Users/omarmostafa/Desktop/Nutrimeter (Grad Project)/nutrimeter/.devcontainer/devcontainer.json --default-user-env-probe loginInteractiveShell --mount type=volume,source=vscode,target=/vscode,external=true --skip-post-create --update-remote-user-uid-default on --mount-workspace-git-root true
+[2022-06-27T19:42:45.178Z] Exit code 1

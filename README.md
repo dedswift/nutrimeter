@@ -19,7 +19,7 @@
 ![Home Page](Prototype/Home%20Screen.png)
 
 5. Profile and settings
-![Profile Page](Prototype/settings.png)
+![Profile Page](Prototype/Settings.png)
 
 
 6. Recipes page

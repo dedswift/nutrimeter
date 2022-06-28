@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 URL = "https://api.spoonacular.com/recipes/findByNutrients?"
 
-API_KEY = "API_KEY_REQUIRED"
+API_KEY = "2b8b31f553384524a8f6e89de8a0c616"
 
 cred = credentials.Certificate("./server/FoodAPI/serviceAccountKey.json")
 firebase.initialize_app(cred)
@@ -230,15 +230,20 @@ def search_recipe():
 
     return make_response(jsonify(response.json()))
 
-
-@app.route('/getRecipes/Ingredients/<recipe_id>')
-def get_recipes_ingredients(recipe_id):
+# http://127.0.0.1:5000/getRecipes/ingredients?recipe-id=632485
+@app.route('/getRecipes/ingredients')
+def get_recipes_ingredients():
     """
     Sending a recipe id to this endpoint returns the ingredients, when parsing
     the response "name" or "nameClean" are used to get the ingredient name
     """
-    
+
+    # get the list of query paramters
+    args = request.args
+    args = args.to_dict()
+    recipe_id = args.get('recipe-id') # get the paramter called 'recipe-id'
     url = f"https://api.spoonacular.com/recipes/{recipe_id}/information?"
+
 
     params = {
         "includeNutrition": False,

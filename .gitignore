@@ -1,6 +1,5 @@
 food-recognizer.tar
 *.h5
-*.png
 *.jpg
 __pycache/
 DockerImages/

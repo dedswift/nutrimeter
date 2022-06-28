@@ -3,29 +3,33 @@
 
 ---
 ## Design Prototype
-1. Sign-up page 1
+1. Sign-up page 1  
 
 ![Sign Up 1](Prototype/sign%20up1.png)
 
-2. Sign-up page 2
+2. Sign-up page 2  
 
 ![Sign Up 2](Prototype/sign%20up2.png)
 
-3. Sign-up page 3
+3. Sign-up page 3  
 
 ![Sign Up 3](Prototype/sign%20up%203.png)
 
-4. Home page
+4. Home page  
+
 ![Home Page](Prototype/Home%20Screen.png)
 
-5. Profile and settings
+5. Profile and settings  
+
 ![Profile Page](Prototype/Settings.png)
 
 
-6. Recipes page
-![Recipes](Prototype/recipes.png)
+6. Recipes page  
 
-7. Camera page
+![Recipes](Prototype/Recipes.png)
+
+7. Camera page  
+
 ![Camera](Prototype/output%20after%20scanning.png)
 
 ---

@@ -1,17 +1,10 @@
-from flask import Flask, request, Response
+from flask import Flask, jsonify, make_response, request, Response
 import numpy as np
 import cv2
-# import jsonpickle
 import mask_rcnn_infer
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
-def index():
-    # img = cv2.imread('006563.jpg')
-    # print(type(img))
-    # _, img_encoded = cv2.imencode('.jpg', img)
-    return "Hello World"
 
 @app.route('/pred-img', methods=['POST'])
 def pred_img():
@@ -30,21 +23,15 @@ def pred_img():
 
     # do Mask R-CNN processing here
 
-    print(type(img))
-    print(img.shape)
-
     labels, mask_image = mask_rcnn_infer.pred_img(img, model)
 
-    cv2.imwrite('test3.png', mask_image)
-    # TODO return the pred image as response
+    cv2.imwrite('pred.png', mask_image)
+    
+    # Return Mask R-CNN predicted labels
+    return make_response(jsonify({'ingredients': labels}))
 
 
-    # building a response
-    res = {'message': 'image received. size={}x{}'.format(1, 1)}
-
-    # res_enc = jsonpickle.encode(res)
-
-    return Response(response=res, status=200, mimetype='application/json')
+    
 
 
 if __name__ == '__main__':

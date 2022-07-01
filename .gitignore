@@ -6,3 +6,4 @@ DockerImages/
 .DS_Store
 ai/final_model.h5
 serviceAccountKey.json
+ngrok.tgz

@@ -14,7 +14,7 @@ db = firestore.client()
 
 app = Flask(__name__)
 URL = "https://api.spoonacular.com/recipes/findByNutrients?"
-SPOON_API_KEY = "2b8b31f553384524a8f6e89de8a0c616"
+SPOON_API_KEY = ""
 
 
 

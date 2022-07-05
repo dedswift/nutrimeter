@@ -8,5 +8,6 @@ RUN pip3 install MarkupSafe==2.1.1
 RUN pip3 install Werkzeug==2.1.2
 RUN pip3 install requests==2.27.1
 RUN pip3 install firebase-admin==5.2.0
-
-CMD [ "/bin/bash" ]
+WORKDIR /nutrimeter
+# CMD [ "/bin/bash" ]
+CMD ["python", "./server/FoodAPI/app.py"]

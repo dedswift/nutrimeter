@@ -219,7 +219,7 @@ def detect_food():
     """Detects the food in the picture and their nutritional values."""
 
     # Mask R-CNN microservice URL
-    url = "http://192.168.1.205:5000/pred-img"
+    url = "http://18.213.110.216:5000/pred-img"
 
     # Sending a POST request to mask R-CNN API and forwarding the image from the client
     response = requests.post(url=url, files={'image': request.files['image']})
@@ -344,4 +344,5 @@ def add_calories(user_id):
 # execute intitializa app twice
 if __name__ == '__main__':
     # app.py as script
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port="5000")
+    
